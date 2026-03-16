@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -f tests/Dockerfile -t tonusername/calculator-ci:latest tests
+        run: docker build -f tests/Dockerfile -t mohaamed007/calculator-ci:latest tests
 
       - name: Push Docker image
-        run: docker push tonusername/calculator-ci:latest
+        run: docker push mohaamed007/calculator-ci:latest
